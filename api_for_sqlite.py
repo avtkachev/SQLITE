@@ -25,8 +25,8 @@ with sq.connect("cars.db") as con: # подключаемся к БД
     # cur.execute("INSERT OR IGNORE INTO cars VALUES(3, 'VAZ 2124', 120000)")
 
     # второй способ ввода данных в БД (с помощью коллекций)
-    for car in cars:
-        cur.execute("INSERT INTO cars VALUES(NULL, ?, ?)", car)
+    # for car in cars:
+    #     cur.execute("INSERT INTO cars VALUES(NULL, ?, ?)", car)
 
     #третий способ ввода данных в БД (через метод, похож на второй способ)
     #cur.executemany("INSERT INTO cars VALUES(NULL, ?, ?)", cars)
