@@ -42,3 +42,5 @@ with sq.connect("cars.db") as con: # подключаемся к БД
     # с помощью метода fetchall выводим SQL-запрос
     rows = cur.fetchall()
     print(rows)
+
+    print('test')
