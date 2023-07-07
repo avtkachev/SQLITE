@@ -18,7 +18,6 @@ with sq.connect("cars.db") as con: # подключаемся к БД
         price INREGER
     )''')
 
-
     # первый способ ввода данных в БД
     # cur.execute("INSERT OR IGNORE INTO cars VALUES(1, 'Toyota Camry', 770000)")
     # cur.execute("INSERT OR IGNORE INTO cars VALUES(2, 'KIA Spectra', 240000)")
